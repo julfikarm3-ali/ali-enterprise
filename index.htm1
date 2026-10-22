@@ -1,22 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-  <title>Ali Enterprise - Jamalpur</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; background: #f0f8ff; padding: 50px; }
-    .box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-    h1 { color: #0070f3; }
-    button { background: #0070f3; color: white; border: none; padding: 12px 25px; border-radius: 8px; font-size: 16px; cursor: pointer; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Enterprise - আদারভিটা বাজার, মাদারগঞ্জ</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{font-family:'Hind Siliguri',sans-serif; box-sizing:border-box}
+body{margin:0; background:#f2f5f3;}
+.top{background:#0b5a3a; color:white; padding:30px 15px; text-align:center;}
+.top h1{margin:0; font-size:36px; letter-spacing:1px}
+.top .tag{background:#ffcc00; color:#0b5a3a; display:inline-block; padding:4px 12px; border-radius:20px; font-weight:700; margin-top:10px; font-size:14px}
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:15px;}
+.box{background:white; border-radius:16px; padding:18px; box-shadow:0 3px 10px rgba(0,0,0,0.06); border-left:5px solid #0b5a3a;}
+.box h3{margin:8px 0 4px; font-size:17px; color:#0b5a3a;}
+.box p{margin:0; font-size:13px; color:#666; line-height:1.4}
+.box .ic{font-size:30px}
+.full{grid-column: span 2; border-left-color:#e91e63;}
+.money{background:linear-gradient(135deg,#0b5a3a,#128c5e); color:white; border:none;}
+.money h3,.money p{color:white;}
+.service-list{background:white; margin:15px; border-radius:16px; padding:18px;}
+.service-list h3{color:#0b5a3a; margin-top:0; text-align:center;}
+.service-list ul{list-style:none; padding:0; margin:0;}
+.service-list li{padding:8px 0; border-bottom:1px dashed #eee; font-size:15px;}
+.service-list li:before{content:"✅ ";}
+
+.contact{background:#111; color:white; padding:25px 15px; text-align:center; margin-top:15px;}
+.contact h2{margin:0 0 10px}
+.btn{display:inline-block; padding:13px 28px; border-radius:30px; text-decoration:none; font-weight:700; margin:8px 5px;}
+.call{background:#25D366; color:white;}
+.phone{background:white; color:#111;}
+</style>
 </head>
 <body>
-  <div class="box">
-    <h1>Welcome to Ali Enterprise</h1>
-    <p>My Frist Website Project</p>
-    <p>Owner: Julfikar Ali | From Jamalpur, Bangladesh</p>
-    <p>Contact: julfikarm3@gmail.com</p>
-    <br>
-    <button onclick="alert('Thank you for visiting Ali Enterprise!')">Contact Us</button>
-  </div>
+
+<div class="top">
+<h1>Ali Enterprise</h1>
+<p>আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p>
+<div class="tag">আপনার বিশ্বস্ত সেবা কেন্দ্র</div>
+</div>
+
+<div class="grid">
+  <div class="box"><div class="ic">🚗</div><h3>গাড়ি ভাড়া</h3><p>প্রাইভেট কার, হাইয়েস, মাইক্রো - যেকোনো জায়গায়</p></div>
+  <div class="box"><div class="ic">💄</div><h3>কসমেটিক</h3><p>অরিজিনাল বিদেশী কসমেটিক</p></div>
+  <div class="box money"><div class="ic">💸</div><h3>বিকাশ, নগদ, রকেট, উপায়</h3><p>ক্যাশ ইন / আউট, রিচার্জ</p></div>
+  <div class="box"><div class="ic">💻</div><h3>অনলাইন সেবা</h3><p>চাকুরির আবেদন, ভিসা, পাসপোর্ট</p></div>
+  <div class="box full"><div class="ic">🪪</div><h3>এন আইডি, জন্ম নিবন্ধন, ভোটার সেবা</h3><p>নতুন আবেদন, সংশোধন, ডাউনলোড ও প্রিন্ট - সকল সেবা</p></div>
+</div>
+
+<div class="service-list">
+<h3>আমাদের সকল সেবা সমূহ</h3>
+<ul>
+<li>গাড়ি ভাড়া (Car Rent)</li>
+<li>কসমেটিক ও প্রসাধনী</li>
+<li>বিকাশ, নগদ, রকেট, উপায়, উপায়</li>
+<li>অনলাইনে চাকুরির আবেদন</li>
+<li>ভিসা প্রসেসিং ও পাসপোর্ট আবেদন</li>
+<li>এন আইডি কার্ড - নতুন, সংশোধন, ডাউনলোড</li>
+<li>জন্ম নিবন্ধন আবেদন ও সংশোধন</li>
+</ul>
+</div>
+
+<div class="contact">
+<h2>যোগাযোগ করুন</h2>
+<p>📍 আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর<br>🕘 প্রতিদিন সকাল ৯টা - রাত ১০টা</p>
+<a class="btn call" href="tel:01819011935">📞 01819-011935 কল করুন</a><br>
+<a class="btn phone" href="https://wa.me/8801819011935">WhatsApp এ মেসেজ দিন</a>
+<p style="font-size:12px; opacity:0.6; margin-top:15px;">© Ali Enterprise 2026</p>
+</div>
+
 </body>
-</html>*******
+</html>
