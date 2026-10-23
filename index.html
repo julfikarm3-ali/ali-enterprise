@@ -13,18 +13,11 @@ body{margin:0;background:#f0f4f1}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px;max-width:700px;margin:auto}
 .box{background:white;border-radius:18px;padding:18px;box-shadow:0 4px 12px rgba(0,0,0,.08);border-left:5px solid #0b5a3a;text-align:center;cursor:pointer}
 .box:active{transform:scale(0.97)}
-.box h3{margin:8px 0 4px;font-size:17px}
-.num{background:#e8f5e9;border-radius:12px;padding:10px;margin-top:10px;font-size:19px;font-weight:800;letter-spacing:1px}
-.contact{background:#111;color:white;padding:25px;text-align:center;margin-top:15px}
+.num{background:#e8f5e9;border-radius:12px;padding:10px;margin-top:10px;font-size:19px;font-weight:800}
 .btn{display:inline-block;background:white;color:#0b5a3a;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px}
-.gadi-list{display:none;grid-column:span 2;background:white;border-radius:18px;padding:15px;box-shadow:0 4px 12px rgba(0,0,0,.08);border:2px solid #0b5a3a}
-.gadi-item{display:flex;justify-content:space-between;align-items:center;background:#f6fffa;border:1px solid #c8e6c9;border-radius:12px;padding:12px 15px;margin:8px 0}
-.gadi-item b{color:#0b5a3a;font-size:15px}
-.call-mini{background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px}
-.online-list{display:none;grid-column:span 2;background:white;border-radius:18px;padding:15px;box-shadow:0 4px 12px rgba(0,0,0,.08);border:2px solid #1a73e8}
-.online-item{display:flex;justify-content:space-between;align-items:center;background:#f0f7ff;border:1px solid #a8c7fa;border-radius:12px;padding:12px 15px;margin:8px 0}
-.online-item b{color:#1a73e8;font-size:15px}
-.call-blue{background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px}
+.list{display:none;grid-column:span 2;background:white;border-radius:18px;padding:15px;box-shadow:0 4px 12px rgba(0,0,0,.08);border:2px solid #0b5a3a}
+.item{display:flex;justify-content:space-between;align-items:center;border-radius:12px;padding:12px 15px;margin:8px 0}
+.donation{background:linear-gradient(135deg,#0b5a3a,#0f8a5a);color:white;border-radius:20px;padding:20px;grid-column:span 2;text-align:center;box-shadow:0 6px 20px rgba(11,90,58,.3)}
 </style>
 </head>
 <body>
@@ -34,72 +27,68 @@ body{margin:0;background:#f0f4f1}
 <h2 style="margin:2px 0 8px;color:#ffcc00;font-size:26px;">প্রোঃ জুলফিকার আলী</h2>
 <p style="margin:4px 0">আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p>
 </div>
+
 <div class="grid">
-<div class="box" onclick="toggleGadi()"><div style="font-size:32px">🚚</div><h3 style="color:#0b5a3a">গাড়ি ভাড়া</h3><p style="font-size:11px;color:#0b5a3a">▼ সব গাড়ি দেখুন</p></div>
+
+<div class="box" onclick="toggleGadi()"><div style="font-size:32px">🚚</div><h3 style="color:#0b5a3a">গাড়ি ভাড়া</h3><p style="font-size:11px;color:#0b5a3a">▼ সব গাড়ি</p></div>
 <div class="box" onclick="window.location.href='tel:01819011935'"><div style="font-size:32px">💄</div><h3 style="color:#0b5a3a">কসমেটিক</h3></div>
 
-<div id="gadiList" class="gadi-list">
-<h3 style="margin:0 0 12px;text-align:center;color:#0b5a3a">🚛 মালবাহী গাড়ি সমূহ</h3>
-<div class="gadi-item"><b>🚚 ৭ ফুট পিকআপ</b><a class="call-mini" href="tel:01819011935">কল</a></div>
-<div class="gadi-item"><b>🚚 ৯ ফুট পিকআপ</b><a class="call-mini" href="tel:01819011935">কল</a></div>
-<div class="gadi-item"><b>🚚 ১২ ফুট ট্রাক</b><a class="call-mini" href="tel:01819011935">কল</a></div>
-<div class="gadi-item"><b>🚚 ১৪ ফুট ট্রাক</b><a class="call-mini" href="tel:01819011935">কল</a></div>
-<div class="gadi-item"><b>🚚 ১৬ ফুট ট্রাক</b><a class="call-mini" href="tel:01819011935">কল</a></div>
-<div class="gadi-item"><b>🚚 ২০ ফুট কাভার্ড ভ্যান</b><a class="call-mini" href="tel:01819011935">কল</a></div>
+<div id="gadiList" class="list" style="border-color:#0b5a3a">
+<h3 style="margin:0 0 12px;text-align:center;color:#0b5a3a">🚛 মালবাহী গাড়ি</h3>
+<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ৭ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
+<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ১২ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
+<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ১৬ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
+<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ২০ ফুট কাভার্ড ভ্যান</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
 </div>
 
-<div class="box" style="border-left-color:#e2136e" onclick="openBkash('01720650389')">
-<div style="font-size:26px">💖</div><h3 style="color:#e2136e">বিকাশ / উপায়</h3>
-<div class="num" style="color:#e2136e;background:#ffe1f0;border:1px dashed #e2136e">01720-650389</div>
-</div>
-<div class="box" style="border-left-color:#ff6a00" onclick="openNagad('01819011935')">
-<div style="font-size:26px">📲</div><h3 style="color:#ff6a00">নগদ / রকেট</h3>
-<div class="num" style="color:#ff6a00;background:#fff0e0;border:1px dashed #ff6a00">01819-011935</div>
+<div class="box" style="border-left-color:#e2136e" onclick="openBkash('01720650389')"><div style="font-size:26px">💖</div><h3 style="color:#e2136e">বিকাশ</h3><div class="num" style="color:#e2136e;background:#ffe1f0;border:1px dashed #e2136e">01720-650389</div></div>
+<div class="box" style="border-left-color:#ff6a00" onclick="openNagad('01819011935')"><div style="font-size:26px">📲</div><h3 style="color:#ff6a00">নগদ</h3><div class="num" style="color:#ff6a00;background:#fff0e0;border:1px dashed #ff6a00">01819-011935</div></div>
+
+<div class="box" style="grid-column:span 2;border-left-color:#1a73e8" onclick="toggleOnline()"><div style="font-size:28px">🪪</div><h3 style="color:#1a73e8">অনলাইন সেবা</h3><p style="font-size:11px;color:#1a73e8">▼ জন্ম নিবন্ধন, ভোটার, পাসপোর্ট, ভিসা</p></div>
+
+<div id="onlineList" class="list" style="border-color:#1a73e8">
+<h3 style="margin:0 0 12px;text-align:center;color:#1a73e8">🖥️ অনলাইন সেবা</h3>
+<div class="item" style="background:#f0f7ff;border:1px solid #a8c7fa"><b>📄 জন্ম নিবন্ধন</b><a href="tel:01819011935" style="background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">যোগাযোগ</a></div>
+<div class="item" style="background:#f0f7ff;border:1px solid #a8c7fa"><b>🪪 ভোটার আইডি</b><a href="tel:01819011935" style="background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">যোগাযোগ</a></div>
+<div class="item" style="background:#f0f7ff;border:1px solid #a8c7fa"><b>🛂 পাসপোর্ট</b><a href="tel:01819011935" style="background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">যোগাযোগ</a></div>
+<div class="item" style="background:#f0f7ff;border:1px solid #a8c7fa"><b>✈️ ভিসা</b><a href="tel:01819011935" style="background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">যোগাযোগ</a></div>
 </div>
 
-<div class="box" style="grid-column:span 2;border-left-color:#1a73e8" onclick="toggleOnline()"><div style="font-size:28px">🪪</div><h3 style="color:#1a73e8">অনলাইন সেবা</h3><p style="font-size:11px;color:#1a73e8">▼ চাপ দিন - সব সেবা দেখুন</p></div>
-
-<div id="onlineList" class="online-list">
-<h3 style="margin:0 0 12px;text-align:center;color:#1a73e8">🖥️ অনলাইন সেবা সমূহ</h3>
-<div class="online-item"><b>📄 জন্ম নিবন্ধন</b><a class="call-blue" href="tel:01819011935">যোগাযোগ</a></div>
-<div class="online-item"><b>🪪 ভোটার আইডি</b><a class="call-blue" href="tel:01819011935">যোগাযোগ</a></div>
-<div class="online-item"><b>🛂 পাসপোর্ট আবেদন</b><a class="call-blue" href="tel:01819011935">যোগাযোগ</a></div>
-<div class="online-item"><b>✈️ ভিসা প্রসেসিং</b><a class="call-blue" href="tel:01819011935">যোগাযোগ</a></div>
-<div class="online-item"><b>📝 NID সংশোধন</b><a class="call-blue" href="tel:01819011935">যোগাযোগ</a></div>
-<div class="online-item"><b>💻 অনলাইন আবেদন</b><a class="call-blue" href="tel:01819011935">যোগাযোগ</a></div>
-<p style="text-align:center;margin:12px 0 0;font-size:12px;color:gray">যে সেবা লাগবে, যোগাযোগ বাটনে চাপ দিন</p>
+<!-- দরিদ্র ফান্ড -->
+<div class="donation">
+<div style="font-size:40px">🤲</div>
+<h2 style="margin:10px 0 5px">দরিদ্র সেবা ফান্ড</h2>
+<p style="margin:5px 0 15px;font-size:14px;opacity:.9">অসহায় ও দরিদ্র মানুষের পাশে দাঁড়ান। আপনার ছোট দান কারো মুখে হাসি ফোটাতে পারে।</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0">
+<div style="background:rgba(255,255,255,.15);border-radius:12px;padding:10px"><div style="font-size:12px">বিকাশ / উপায়</div><b style="font-size:18px">01720-650389</b><br><a href="#" onclick="openBkash('01720650389');return false;" style="background:#ffcc00;color:#000;padding:6px 12px;border-radius:20px;text-decoration:none;font-size:12px;display:inline-block;margin-top:6px;font-weight:700">দান করুন</a></div>
+<div style="background:rgba(255,255,255,.15);border-radius:12px;padding:10px"><div style="font-size:12px">নগদ / রকেট</div><b style="font-size:18px">01819-011935</b><br><a href="#" onclick="openNagad('01819011935');return false;" style="background:white;color:#0b5a3a;padding:6px 12px;border-radius:20px;text-decoration:none;font-size:12px;display:inline-block;margin-top:6px;font-weight:700">দান করুন</a></div>
+</div>
+<p style="font-size:11px;opacity:.7;margin:0">১০০% স্বচ্ছতার সাথে বিতরণ করা হয়। আল্লাহ আপনাকে উত্তম প্রতিদান দিন।</p>
 </div>
 
 </div>
-<div class="contact">
+
+<div style="background:#111;color:white;padding:25px;text-align:center;margin-top:15px">
 <h2 style="margin-top:0">যোগাযোগ</h2>
 <a class="btn" href="tel:01819011935">01819-011935</a>
 <a class="btn" href="tel:01720650389">01720-650389</a>
+<p style="font-size:11px;margin-top:15px;opacity:.6">© Ali Enterprise - মানবতার সেবায়</p>
 </div>
+
 <script>
 function toggleGadi(){
-  var x=document.getElementById("gadiList");
-  var y=document.getElementById("onlineList");
-  y.style.display="none";
-  if(x.style.display==="block"){x.style.display="none";}else{x.style.display="block"; x.scrollIntoView({behavior:'smooth'});}
+  var x=document.getElementById("gadiList");var y=document.getElementById("onlineList");y.style.display="none";
+  x.style.display=x.style.display==="block"?"none":"block";
 }
 function toggleOnline(){
-  var x=document.getElementById("onlineList");
-  var y=document.getElementById("gadiList");
-  y.style.display="none";
-  if(x.style.display==="block"){x.style.display="none";}else{x.style.display="block"; x.scrollIntoView({behavior:'smooth'});}
+  var x=document.getElementById("onlineList");var y=document.getElementById("gadiList");y.style.display="none";
+  x.style.display=x.style.display==="block"?"none":"block";
 }
 function openBkash(num){
-  navigator.clipboard.writeText(num).then(()=>{
-    alert(num + " কপি হয়েছে! বিকাশ অ্যাপ খুলছে...");
-    window.location.href = "bKash://";
-  }).catch(()=>{ window.location.href = "tel:"+num; });
+  navigator.clipboard.writeText(num).then(()=>{alert("দান করার জন্য "+num+" কপি হয়েছে! বিকাশে Send Money করুন - আল্লাহ কবুল করুন");window.location.href="bKash://";}).catch(()=>{window.location.href="tel:"+num;});
 }
 function openNagad(num){
-  navigator.clipboard.writeText(num).then(()=>{
-    alert(num + " কপি হয়েছে! নগদ অ্যাপ খুলছে...");
-    window.location.href = "nagad://";
-  }).catch(()=>{ window.location.href = "tel:"+num; });
+  navigator.clipboard.writeText(num).then(()=>{alert("দান করার জন্য "+num+" কপি হয়েছে! নগদে Send Money করুন");window.location.href="nagad://";}).catch(()=>{window.location.href="tel:"+num;});
 }
 </script>
 </body>
