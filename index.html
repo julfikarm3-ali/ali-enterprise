@@ -1,8 +1,40 @@
-<div id="gadiList" class="list">
-<h3 style="text-align:center;color:#0b5a3a">🚛 মালবাহী গাড়ি</h3>
-<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ৭ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
-<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ৯ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
-<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ১০ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
-<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ১২ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
-<div class="item" style="background:#f6fffa;border:1px solid #c8e6c9"><b>🚚 ১৬ ফুট</b><a href="tel:01819011935" style="background:#0b5a3a;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">কল</a></div>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ali Enterprise - আদারভিটা বাজার</title>
+<style>
+*{font-family:sans-serif;box-sizing:border-box}
+body{margin:0;background:#eef3f0}
+.top{background:#0b5a3a;color:#fff;text-align:center;padding:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:700px;margin:auto}
+.box{background:#fff;border-radius:16px;padding:16px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.1);cursor:pointer;border-left:5px solid #0b5a3a}
+.list{display:none;grid-column:span 2;background:#fff;border-radius:16px;padding:14px;border:2px solid #0b5a3a}
+.item{display:flex;justify-content:space-between;align-items:center;background:#f6fffa;border:1px solid #c8e6c9;border-radius:12px;padding:12px;margin:8px 0}
+.item b{font-size:16px}
+.btn{background:#0b5a3a;color:#fff;padding:6px 14px;border-radius:20px;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<div class="top"><h2>Ali Enterprise</h2><h3 style="color:#ffcc00">প্রোঃ জুলফিকার আলী</h3><p>আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p></div>
+<div class="grid">
+
+<div class="box" onclick="document.getElementById('gadiList').style.display=document.getElementById('gadiList').style.display=='block'?'none':'block'"><div style="font-size:30px">🚚</div><h3>গাড়ি ভাড়া</h3><small>▼ ক্লিক</small></div>
+<div class="box" style="border-left-color:#ffc400"><div style="font-size:30px">💡</div><h3>ইলেকট্রিক</h3><small>A B S</small></div>
+
+<div id="gadiList" class="list" style="display:block">
+<h3 style="text-align:center;color:#0b5a3a">🚛 মালবাহী গাড়ি ভাড়া</h3>
+<div class="item"><b>🚚 ৭ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
+<div class="item"><b>🚚 ৯ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
+<div class="item"><b>🚚 ১০ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
+<div class="item"><b>🚚 ১২ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
+<div class="item"><b>🚚 ১৬ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
 </div>
+
+<div class="box" style="border-left-color:#e2136e"><div>💖</div><h4>বিকাশ / উপায়</h4><a href="tel:01720650389" style="text-decoration:none;color:#e2136e;font-weight:800">01720-650389</a></div>
+<div class="box" style="border-left-color:#ff6a00"><div>📲</div><h4>নগদ / রকেট</h4><a href="tel:01819011935" style="text-decoration:none;color:#ff6a00;font-weight:800">01819-011935</a></div>
+
+</div>
+</body>
+</html>
