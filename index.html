@@ -3,28 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ali Enterprise - আদারভিটা বাজার</title>
+<title>Ali Enterprise</title>
 <style>
-*{font-family:sans-serif;box-sizing:border-box}
+*{box-sizing:border-box;font-family:sans-serif}
 body{margin:0;background:#eef3f0}
 .top{background:#0b5a3a;color:#fff;text-align:center;padding:22px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:700px;margin:auto}
 .box{background:#fff;border-radius:16px;padding:16px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.1);cursor:pointer;border-left:5px solid #0b5a3a}
-.list{display:none;grid-column:span 2;background:#fff;border-radius:16px;padding:14px;border:2px solid #0b5a3a}
+.list{grid-column:span 2;background:#fff;border-radius:16px;padding:14px;border:2px solid #0b5a3a;display:none}
 .item{display:flex;justify-content:space-between;align-items:center;background:#f6fffa;border:1px solid #c8e6c9;border-radius:12px;padding:12px;margin:8px 0}
-.item b{font-size:16px}
 .btn{background:#0b5a3a;color:#fff;padding:6px 14px;border-radius:20px;text-decoration:none;font-weight:700}
+.palli{grid-column:span 2;background:linear-gradient(135deg,#0b5a3a,#159165);color:#fff;border-radius:18px;padding:22px;text-align:center}
 </style>
 </head>
 <body>
-<div class="top"><h2>Ali Enterprise</h2><h3 style="color:#ffcc00">প্রোঃ জুলফিকার আলী</h3><p>আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p></div>
+<div class="top"><h2 style="margin:0">Ali Enterprise</h2><h3 style="color:#ffcc00;margin:6px 0">প্রোঃ জুলফিকার আলী</h3><p style="margin:0">আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p></div>
+
 <div class="grid">
 
-<div class="box" onclick="document.getElementById('gadiList').style.display=document.getElementById('gadiList').style.display=='block'?'none':'block'"><div style="font-size:30px">🚚</div><h3>গাড়ি ভাড়া</h3><small>▼ ক্লিক</small></div>
-<div class="box" style="border-left-color:#ffc400"><div style="font-size:30px">💡</div><h3>ইলেকট্রিক</h3><small>A B S</small></div>
+<div class="box" onclick="toggle('gadiList')"><div style="font-size:28px">🚚</div><b>গাড়ি ভাড়া</b><br><small>▼ ক্লিক</small></div>
+<div class="box" style="border-left-color:#ffb300" onclick="toggle('elecList')"><div style="font-size:28px">💡</div><b>ইলেকট্রিক</b><br><small>ABS</small></div>
 
-<div id="gadiList" class="list" style="display:block">
-<h3 style="text-align:center;color:#0b5a3a">🚛 মালবাহী গাড়ি ভাড়া</h3>
+<div id="gadiList" class="list">
+<h3 style="text-align:center;color:#0b5a3a;margin:4px 0">🚛 মালবাহী গাড়ি</h3>
 <div class="item"><b>🚚 ৭ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
 <div class="item"><b>🚚 ৯ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
 <div class="item"><b>🚚 ১০ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
@@ -32,9 +33,37 @@ body{margin:0;background:#eef3f0}
 <div class="item"><b>🚚 ১৬ ফুট</b><a class="btn" href="tel:01819011935">কল</a></div>
 </div>
 
-<div class="box" style="border-left-color:#e2136e"><div>💖</div><h4>বিকাশ / উপায়</h4><a href="tel:01720650389" style="text-decoration:none;color:#e2136e;font-weight:800">01720-650389</a></div>
-<div class="box" style="border-left-color:#ff6a00"><div>📲</div><h4>নগদ / রকেট</h4><a href="tel:01819011935" style="text-decoration:none;color:#ff6a00;font-weight:800">01819-011935</a></div>
+<div id="elecList" class="list" style="border-color:#ffb300">
+<h3 style="text-align:center;color:#b38600">💡 A B S ENGINEERING</h3>
+<div class="item" style="background:#fffbe6"><b>BRB/BBS তার</b><a class="btn" style="background:#b38600" href="tel:01515233234">কল</a></div>
+<div class="item" style="background:#fffbe6"><b>সুইচ, সকেট, ব্রেকার</b><a class="btn" style="background:#b38600" href="tel:01615233234">কল</a></div>
+<p style="text-align:center"><b>01515-233234</b><br><b>01615-233234</b></p>
+</div>
+
+<div class="box" style="border-left-color:#e2136e"><div>💖</div><b>বিকাশ / উপায়</b><br><a href="tel:01720650389" style="color:#e2136e;text-decoration:none;font-weight:800">01720-650389</a></div>
+<div class="box" style="border-left-color:#ff6a00"><div>📲</div><b>নগদ / রকেট</b><br><a href="tel:01819011935" style="color:#ff6a00;text-decoration:none;font-weight:800">01819-011935</a></div>
+
+<div class="box" style="border-left-color:#1a73e8" onclick="toggle('onlineList')"><div style="font-size:28px">🪪</div><b>অনলাইন সেবা</b><br><small>জন্ম নিবন্ধন, ভোটার</small></div>
+<div class="box" style="border-left-color:#0b5a3a"><div style="font-size:28px">🤲</div><b>পল্লী কল্যাণ</b><br><small>দান করুন</small></div>
+
+<div id="onlineList" class="list" style="border-color:#1a73e8">
+<h3 style="text-align:center;color:#1a73e8">🖥️ অনলাইন সেবা</h3>
+<div class="item" style="background:#f0f7ff"><b>📄 জন্ম নিবন্ধন</b><a class="btn" style="background:#1a73e8" href="tel:01819011935">কল</a></div>
+<div class="item" style="background:#f0f7ff"><b>🪪 ভোটার আইডি</b><a class="btn" style="background:#1a73e8" href="tel:01819011935">কল</a></div>
+<div class="item" style="background:#f0f7ff"><b>🛂 পাসপোর্ট</b><a class="btn" style="background:#1a73e8" href="tel:01819011935">কল</a></div>
+</div>
+
+<div class="palli">
+<div style="font-size:38px">🤲</div>
+<h2 style="margin:6px 0">পল্লী কল্যাণ সংস্থা</h2>
+<p style="font-size:12px">বিকাশ / নগদ / উপায় / রকেট</p>
+<a href="tel:01720650389" style="display:inline-block;background:#ffcc00;color:#000;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:900;font-size:18px">* দান করুন *</a>
+<p style="font-size:11px;margin-top:10px;opacity:.8">আপনার দান অসহায় মানুষের কাছে পৌঁছে যাবে</p>
+</div>
 
 </div>
+<script>
+function toggle(id){var x=document.getElementById(id);x.style.display=x.style.display=='block'?'none':'block'}
+</script>
 </body>
 </html>
