@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali Enterprise - আদারভিটা বাজার</title>
+<title>Ali Enterprise</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0b5a3a">
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,27 +13,25 @@ body{margin:0;background:#f0f4f1}
 .top{background:#0b5a3a;color:white;padding:28px 15px;text-align:center}
 .profile-img{width:140px;height:140px;border-radius:50%;border:4px solid #ffcc00;object-fit:cover;display:block;margin:0 auto 12px;background:white}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px;max-width:700px;margin:auto}
-.box{background:white;border-radius:18px;padding:18px;box-shadow:0 4px 12px rgba(0,0,0,.08);border-left:5px solid #0b5a3a;text-align:center;cursor:pointer}
-.box:active{transform:scale(0.97)}
-.num{background:#e8f5e9;border-radius:12px;padding:10px;margin-top:10px;font-size:19px;font-weight:800}
+.box{background:white;border-radius:18px;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,.08);border-left:5px solid #0b5a3a;text-align:center;cursor:pointer}
+.num{border-radius:12px;padding:10px;margin-top:8px;font-size:17px;font-weight:800}
 .list{display:none;grid-column:span 2;background:white;border-radius:18px;padding:15px;box-shadow:0 4px 12px rgba(0,0,0,.08);border:2px solid #0b5a3a}
 .item{display:flex;justify-content:space-between;align-items:center;border-radius:12px;padding:12px 15px;margin:8px 0}
-.donation{background:linear-gradient(135deg,#0b5a3a,#0f8a5a);color:white;border-radius:20px;padding:20px;grid-column:span 2;text-align:center}
+.palli{background:linear-gradient(135deg,#0b5a3a,#0f8a5a);color:white;border-radius:20px;padding:24px;grid-column:span 2;text-align:center;box-shadow:0 6px 20px rgba(11,90,58,.3)}
 .abs-box{background:linear-gradient(135deg,#111,#222);color:#ffcc00;border-radius:16px;padding:16px;margin-top:14px;text-align:center;border:2px solid #ffcc00}
 </style>
 </head>
 <body>
 <div class="top">
-<img src="Ali.jpg" class="profile-img" alt="Julfikar Ali">
+<img src="Ali.jpg" class="profile-img" onerror="this.style.display='none'">
 <h1 style="margin:8px 0 2px">Ali Enterprise</h1>
 <h2 style="margin:2px 0 8px;color:#ffcc00;font-size:26px;">প্রোঃ জুলফিকার আলী</h2>
-<p style="margin:4px 0">আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p>
+<p>আদারভিটা বাজার, মাদারগঞ্জ, জামালপুর</p>
 </div>
 
 <div class="grid">
-
-<div class="box" onclick="toggleGadi()"><div style="font-size:32px">🚚</div><h3 style="color:#0b5a3a;margin:5px 0">গাড়ি ভাড়া</h3><p style="font-size:11px;margin:0;color:gray">▼ দেখুন</p></div>
-<div class="box" style="border-left-color:#ffc400" onclick="toggleElectric()"><div style="font-size:32px">💡</div><h3 style="color:#b38600;margin:5px 0">ইলেকট্রিক মালামাল</h3><p style="font-size:11px;margin:0;color:gray">▼ A B S ENGINEERING</p></div>
+<div class="box" onclick="toggleGadi()"><div style="font-size:32px">🚚</div><h3 style="color:#0b5a3a;margin:5px 0">গাড়ি ভাড়া</h3></div>
+<div class="box" style="border-left-color:#ffc400" onclick="toggleElectric()"><div style="font-size:32px">💡</div><h3 style="color:#b38600;margin:5px 0">ইলেকট্রিক মালামাল</h3></div>
 
 <div id="gadiList" class="list">
 <h3 style="text-align:center;color:#0b5a3a">🚛 মালবাহী গাড়ি</h3>
@@ -46,21 +44,20 @@ body{margin:0;background:#f0f4f1}
 <div id="electricList" class="list" style="border-color:#ffc400">
 <h3 style="text-align:center;color:#b38600">⚡ বিল্ডিং ইলেকট্রিক মালামাল</h3>
 <div class="item" style="background:#fffbe6;border:1px solid #ffe082"><b>🔌 BRB / BBS তার</b><a href="tel:01515233234" style="background:#b38600;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">দাম</a></div>
-<div class="item" style="background:#fffbe6;border:1px solid #ffe082"><b>💡 সুইচ, সকেট, হোল্ডার</b><a href="tel:01515233234" style="background:#b38600;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">দাম</a></div>
+<div class="item" style="background:#fffbe6;border:1px solid #ffe082"><b>💡 সুইচ, সকেট</b><a href="tel:01515233234" style="background:#b38600;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">দাম</a></div>
 <div class="item" style="background:#fffbe6;border:1px solid #ffe082"><b>🔋 ব্রেকার, DB বোর্ড</b><a href="tel:01615233234" style="background:#b38600;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">দাম</a></div>
 <div class="item" style="background:#fffbe6;border:1px solid #ffe082"><b>💡 LED লাইট, ফ্যান</b><a href="tel:01615233234" style="background:#b38600;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">দাম</a></div>
 <div class="abs-box">
-<div style="font-size:22px;font-weight:900;letter-spacing:2px">A B S ENGINEERING</div>
-<div style="font-size:13px;color:white;margin:8px 0">ইলেকট্রিক মালামালের জন্য যোগাযোগ করুন</div>
-<a href="tel:01515233234" style="display:block;background:#ffcc00;color:black;padding:10px;border-radius:12px;text-decoration:none;font-weight:900;margin:6px 0">📞 01515-233234</a>
-<a href="tel:01615233234" style="display:block;background:white;color:black;padding:10px;border-radius:12px;text-decoration:none;font-weight:900;margin:6px 0">📞 01615-233234</a>
+<div style="font-size:21px;font-weight:900;letter-spacing:2px">A B S ENGINEERING</div>
+<a href="tel:01515233234" style="display:block;background:#ffcc00;color:black;padding:10px;border-radius:12px;text-decoration:none;font-weight:900;margin:5px 0">📞 01515-233234</a>
+<a href="tel:01615233234" style="display:block;background:white;color:black;padding:10px;border-radius:12px;text-decoration:none;font-weight:900;margin:5px 0">📞 01615-233234</a>
 </div>
 </div>
 
-<div class="box" style="border-left-color:#e2136e"><div style="font-size:26px">💖</div><h3 style="color:#e2136e;margin:5px 0">বিকাশ</h3><a href="tel:01720650389" style="text-decoration:none"><div class="num" style="color:#e2136e;background:#ffe1f0">01720-650389</div></a></div>
-<div class="box" style="border-left-color:#ff6a00"><div style="font-size:26px">📲</div><h3 style="color:#ff6a00;margin:5px 0">নগদ</h3><a href="tel:01819011935" style="text-decoration:none"><div class="num" style="color:#ff6a00;background:#fff0e0">01819-011935</div></a></div>
+<div class="box" style="border-left-color:#e2136e"><h3 style="color:#e2136e;margin:4px 0;font-size:15px">💖 বিকাশ / উপায়</h3><a href="tel:01720650389" style="text-decoration:none"><div class="num" style="color:#e2136e;background:#ffe1f0">01720-650389</div></a></div>
+<div class="box" style="border-left-color:#ff6a00"><h3 style="color:#ff6a00;margin:4px 0;font-size:15px">📲 নগদ / রকেট</h3><a href="tel:01819011935" style="text-decoration:none"><div class="num" style="color:#ff6a00;background:#fff0e0">01819-011935</div></a></div>
 
-<div class="box" style="grid-column:span 2;border-left-color:#1a73e8" onclick="toggleOnline()"><div style="font-size:28px">🪪</div><h3 style="color:#1a73e8;margin:5px 0">অনলাইন সেবা</h3><p style="font-size:11px;margin:0;color:gray">▼ জন্ম নিবন্ধন, ভোটার, পাসপোর্ট</p></div>
+<div class="box" style="grid-column:span 2;border-left-color:#1a73e8" onclick="toggleOnline()"><div style="font-size:28px">🪪</div><h3 style="color:#1a73e8;margin:5px 0">অনলাইন সেবা</h3></div>
 <div id="onlineList" class="list" style="border-color:#1a73e8">
 <h3 style="text-align:center;color:#1a73e8">🖥️ অনলাইন সেবা</h3>
 <div class="item" style="background:#f0f7ff;border:1px solid #a8c7fa"><b>📄 জন্ম নিবন্ধন</b><a href="tel:01819011935" style="background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">যোগাযোগ</a></div>
@@ -68,22 +65,20 @@ body{margin:0;background:#f0f4f1}
 <div class="item" style="background:#f0f7ff;border:1px solid #a8c7fa"><b>🛂 পাসপোর্ট / ভিসা</b><a href="tel:01819011935" style="background:#1a73e8;color:white;padding:6px 14px;border-radius:20px;text-decoration:none">যোগাযোগ</a></div>
 </div>
 
-<div class="donation">
-<div style="font-size:40px">🤲</div>
-<h2 style="margin:10px 0 5px">দরিদ্র সেবা ফান্ড</h2>
-<p style="margin:5px 0 15px;font-size:14px;opacity:.9">অসহায় মানুষের পাশে দাঁড়ান</p>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-<div style="background:rgba(255,255,255,.15);border-radius:12px;padding:10px"><div style="font-size:12px">বিকাশ</div><b>01720-650389</b></div>
-<div style="background:rgba(255,255,255,.15);border-radius:12px;padding:10px"><div style="font-size:12px">নগদ</div><b>01819-011935</b></div>
-</div>
+<!-- নতুন পল্লি কল্যাণ সংস্থা -->
+<div class="palli">
+<div style="font-size:42px">🤲</div>
+<h2 style="margin:10px 0 8px;font-size:26px">পল্লি কল্যাণ সংস্থা</h2>
+<p style="margin:0 0 14px;font-size:13px;opacity:.9">বিকাশ / নগদ / উপায় / রকেট</p>
+<a href="tel:01720650389" style="display:inline-block;background:#ffcc00;color:#000;padding:12px 32px;border-radius:30px;text-decoration:none;font-weight:900;font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,.2)">* দান করুন *</a>
+<p style="margin:12px 0 0;font-size:11px;opacity:.7">আপনার দান পৌঁছে যাবে অসহায় মানুষের কাছে</p>
 </div>
 
 </div>
 
 <div style="background:#111;color:white;padding:25px;text-align:center;margin-top:15px">
-<h2 style="margin-top:0">যোগাযোগ</h2>
-<a href="tel:01819011935" style="display:inline-block;background:white;color:#0b5a3a;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px">01819-011935</a>
-<p style="margin-top:15px;font-size:13px;opacity:.6">Ali Enterprise © 2026</p>
+<a href="tel:01819011935" style="display:inline-block;background:white;color:#0b5a3a;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:700">01819-011935</a>
+<p style="margin-top:12px;font-size:13px;opacity:.6">Ali Enterprise © 2026</p>
 </div>
 
 <script>
